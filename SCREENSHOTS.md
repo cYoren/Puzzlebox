@@ -13,7 +13,7 @@ stall the run.
 
 ## Run it locally
 
-You need a running Android emulator, iOS simulator, or `-d chrome`.
+You need a running Android emulator, Android device, or `-d chrome`.
 
 ```bash
 tool/screenshots.sh                 # first available device
@@ -24,7 +24,7 @@ Output:
 
 - `screenshots/raw/` — raw device PNGs, named `NN_<gameId>.png`
 - `screenshots/store/play_phone/` — 1080×1920 (Google Play phone)
-- `screenshots/store/ios_6_7/` — 1290×2796 (App Store 6.7" iPhone)
+- `screenshots/store/large_phone_1290x2796/` - 1290×2796 large portrait phone
 
 Reframe without recapturing (after editing captions):
 

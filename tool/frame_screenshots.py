@@ -23,8 +23,8 @@ from PIL import Image, ImageDraw, ImageFont
 PRESETS = {
     # Google Play phone (16:9-ish portrait)
     "play_phone": (1080, 1920),
-    # App Store 6.7" iPhone portrait
-    "ios_6_7": (1290, 2796),
+    # Large portrait phone frame.
+    "large_phone_1290x2796": (1290, 2796),
 }
 
 # Brand

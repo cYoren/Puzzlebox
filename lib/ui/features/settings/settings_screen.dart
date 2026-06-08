@@ -99,7 +99,7 @@ class SettingsScreen extends ConsumerWidget {
                         'Report an Error',
                         Icons.bug_report_rounded,
                         () => _launchUrl(
-                            'https://github.com/sidhant947/Puzzle/issues'),
+                            'https://github.com/cYoren/Puzzlebox/issues'),
                         iconColor: Colors.redAccent,
                       ),
                       const SizedBox(height: DesignSystem.spaceXL),

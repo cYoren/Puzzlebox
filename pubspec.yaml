@@ -120,8 +120,6 @@ flutter_launcher_icons:
   android: true
   adaptive_icon_background: "#0A0A0A"
   adaptive_icon_foreground: "assets/icon/puzzlebox_icon.png"
-  ios: true
-  remove_alpha_ios: true
   web:
     generate: true
     background_color: "#0A0A0A"
@@ -129,5 +127,3 @@ flutter_launcher_icons:
   windows:
     generate: true
     icon_size: 256
-  macos:
-    generate: true

@@ -2,7 +2,7 @@
 
 ## Supported Versions
 
-The following versions of Puzzle are currently being supported with security updates:
+The following versions of PuzzleBox are currently being supported with security updates:
 
 | Version | Supported          |
 | ------- | ------------------ |
@@ -17,7 +17,7 @@ We take the security of this project seriously. If you believe you have found a 
 
 ### How to report
 
-Please send an email to **khatkarsidhant@gmail.com** with the following information:
+Please report security vulnerabilities privately to the maintainers with the following information:
 
 - A description of the vulnerability.
 - Steps to reproduce the issue.

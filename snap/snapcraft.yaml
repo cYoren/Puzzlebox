@@ -1,9 +1,10 @@
 name: puzzle-games
 base: core22
 adopt-info: puzzle
-summary: A professional suite of minimalist puzzle games
+summary: 161 minimalist brain puzzles in one calm app
 description: |
-  A professional suite of minimalist puzzle games.
+  PuzzleBox combines logic, math, memory, spatial, attention, and word puzzles
+  with a discovery home and shuffle feed for quick play.
 
 confinement: strict
 grade: stable

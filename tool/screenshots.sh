@@ -5,9 +5,9 @@
 #   tool/screenshots.sh                 # uses the first available device
 #   tool/screenshots.sh <device_id>    # e.g. emulator-5554, or a simulator UDID
 #
-# Needs a running emulator/simulator (or `-d chrome`). Output:
+# Needs a running emulator, Android device, or `-d chrome`. Output:
 #   screenshots/raw/      raw PNGs from the device
-#   screenshots/store/    framed, store-sized images (play_phone, ios_6_7)
+#   screenshots/store/    framed, store-sized images
 set -euo pipefail
 cd "$(dirname "$0")/.."
 

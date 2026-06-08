@@ -1,4 +1,4 @@
-name: Manual Build Test
+name: Manual Release Build Smoke
 
 on:
   workflow_dispatch:
@@ -10,7 +10,7 @@ on:
 
 jobs:
   build:
-    name: Testing
+    name: Build Android and Linux
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code

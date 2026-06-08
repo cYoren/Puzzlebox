@@ -1,6 +1,6 @@
 # PuzzleBox
 
-A cross-platform suite of **161 minimalist brain puzzles**, built with Flutter. Logic, math, memory, spatial, attention and word games, all in one clean app, on Android, iOS, web, Windows, macOS and Linux.
+A cross-platform suite of **161 minimalist brain puzzles**, built with Flutter. Logic, math, memory, spatial, attention and word games, all in one clean app. Current maintained targets are Android, web, Windows, and Linux.
 
 PuzzleBox is a friendly fork of [sidhant947/Puzzle](https://github.com/sidhant947/Puzzle) (GPL-3.0) with two ideas at its heart:
 
@@ -11,7 +11,7 @@ PuzzleBox is a friendly fork of [sidhant947/Puzzle](https://github.com/sidhant94
 
 ## Why Flutter (and not Kotlin)
 
-The upstream project is already 100% Flutter/Dart, so it is cross-platform out of the box: a single codebase runs on Android, iOS, web, Windows, macOS and Linux. No need to rewrite anything in Kotlin. We kept Flutter and built on top of it.
+The upstream project is already 100% Flutter/Dart, so it gives us broad platform reach without a Kotlin rewrite. This fork currently ships and verifies Android, web, Windows, and Linux. iOS and macOS folders are not present in the repo, and iOS App Store distribution is not a current target while the inherited GPL-3.0 license remains unresolved for Apple distribution.
 
 ## The 161 games, by category
 
@@ -39,6 +39,11 @@ flutter pub get
 dart run build_runner build --delete-conflicting-outputs   # generates *.g.dart / *.freezed.dart
 flutter run                                                 # or: flutter run -d chrome
 ```
+
+## Platform scope
+
+- Supported in this repo today: Android, web, Windows, Linux.
+- Not currently supported: iOS and macOS. Do not advertise App Store readiness unless the Apple platform folders, signing pipeline, and GPL-3.0 licensing blocker are resolved.
 
 The internal Dart package name stays `puzzle` (it is referenced by ~126 files and is invisible to users); only the user-facing branding is PuzzleBox.
 

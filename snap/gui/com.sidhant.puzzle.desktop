@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=Puzzle Games
-Comment=A professional suite of minimalist puzzle games
+Name=PuzzleBox
+Comment=161 minimalist brain puzzles: logic, math, memory, spatial, attention, and word
 Exec=puzzle-games
 Icon=${SNAP}/meta/gui/com.sidhant.puzzle.png
 Type=Application
