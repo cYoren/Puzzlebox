@@ -12,6 +12,10 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 
 DEVICE="${1:-}"
+DEVICE_ARGS=()
+if [[ -n "$DEVICE" ]]; then
+  DEVICE_ARGS=(-d "$DEVICE")
+fi
 
 echo "==> flutter pub get"
 flutter pub get
@@ -24,7 +28,7 @@ rm -rf screenshots/raw
 flutter drive \
   --driver=test_driver/integration_test.dart \
   --target=integration_test/screenshot_test.dart \
-  ${DEVICE:+-d "$DEVICE"}
+  "${DEVICE_ARGS[@]}"
 
 echo "==> framing for stores"
 python3 tool/frame_screenshots.py

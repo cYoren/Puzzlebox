@@ -58,10 +58,7 @@ jobs:
           profile: pixel_6
           disable-animations: true
           script: |
-            flutter drive \
-              --driver=test_driver/integration_test.dart \
-              --target=integration_test/screenshot_test.dart \
-              -d emulator-5554
+            flutter drive --driver=test_driver/integration_test.dart --target=integration_test/screenshot_test.dart -d emulator-5554
             python3 tool/frame_screenshots.py
 
       - name: Upload screenshots
