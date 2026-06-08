@@ -99,23 +99,20 @@ void main() {
     await _shoot(binding, tester, '00_home');
 
     // 2. Each hero game, pushed programmatically off the home navigator.
-    final BuildContext context = tester.element(find.byType(MainShell));
     var index = 1;
     for (final id in kHeroGameIds) {
       final game = GameCatalog.find(id);
       if (game == null) continue;
 
-      // ignore: use_build_context_synchronously
-      Navigator.of(context).push(
-        CustomPageRoute(page: game.buildScreen(context)),
-      );
+      final context = tester.element(find.byType(MainShell));
+      final navigator = Navigator.of(context);
+      navigator.push(CustomPageRoute(page: game.buildScreen(context)));
       await _settle(tester);
 
       final label = index.toString().padLeft(2, '0');
       await _shoot(binding, tester, '${label}_$id');
 
-      // ignore: use_build_context_synchronously
-      Navigator.of(context).pop();
+      navigator.pop();
       await _settle(tester);
       index++;
     }

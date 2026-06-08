@@ -144,6 +144,9 @@ class MentalCalendarScreen extends ConsumerWidget {
       if (score >= 7) {
         ref.read(gameStreakNotifierProvider.notifier).completeGame('mental_calendar');
       }
+      if (!context.mounted) {
+        return;
+      }
       showDialog(
         context: context,
         barrierDismissible: false,
